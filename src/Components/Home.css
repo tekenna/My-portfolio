@@ -1,0 +1,88 @@
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home_content_wrap {
+  position: absolute;
+  top: 15rem;
+  left: 3rem;
+  border-left: 4px solid white;
+  height: 42%;
+  padding: 0 4rem;
+  letter-spacing: 0.2rem;
+  width: 80%;
+  line-height: 0.5rem;
+}
+.home_content_wrap h4 {
+  color: gold;
+  padding-top: 2rem;
+  font-size: 2.5em;
+}
+.home_content_wrap h2 {
+  color: white;
+  padding-top: -0.3rem;
+  text-transform: capitalize;
+  font-size: 2.6em;
+}
+.home_content_wrap p {
+  color: gray;
+  text-transform: capitalize;
+  padding: 0.1rem 0;
+}
+.home_content_wrap span {
+  color: gold;
+}
+.icon_wrap {
+  display: flex;
+}
+.buttons {
+  display: flex;
+}
+.buttons button {
+  padding: 0.8rem 2rem;
+  margin: 1.5rem 2.5rem 0 0;
+  background: rgba(255, 217, 0, 0.6);
+  border: none;
+  color: balck;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1em;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+#btn {
+  border: 1px solid rgba(255, 217, 0, 0.6);
+  background: transparent;
+  color: rgba(255, 217, 0, 0.6);
+}
+#btn:hover {
+  background: rgb(255, 217, 0);
+  color: rgb(37, 35, 35);
+}
+.buttons button:hover {
+  background: rgb(255, 217, 0);
+  color: rgb(37, 35, 35);
+  backdrop-filter: blur(1rem);
+}
+
+@media screen and (max-width: 800px) {
+  .home_content_wrap {
+    top: 12rem;
+    width: 100%;
+    border-left: 4px solid white;
+    height: 50%;
+    padding: 0 2rem;
+    letter-spacing: 0.1rem;
+    width: 80%;
+  }
+  .buttons{
+      width: 100%;
+  }
+  .buttons button {
+    padding: 0.5rem 0.5rem;
+    width: 5rem
+  }
+}

@@ -1,0 +1,113 @@
+.contact {
+  position: fixed;
+  z-index: 10000;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.contact_text_box {
+  background: brown;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 40%;
+  height: 20%;
+  margin-top: 8%;
+  color: rgba(29, 27, 27, 0.521);
+}
+.contact h3 {
+  color: black;
+  font-weight: 600;
+  font-size: 1.5em;
+  letter-spacing: 0.1rem;
+}
+.contact h3 span {
+  color: gold;
+}
+.border {
+  border-bottom: 2px solid gold;
+  width: 3rem;
+  padding: 0.2rem 0;
+}
+.contact_text_box p {
+  padding: 0.7rem 0;
+  color: white;
+}
+.icon {
+  margin-right: 1rem;
+}
+.text_fields {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 50%;
+  background: rgba(9, 68, 9, 0.575);
+  border: 2px solid goldenrod;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.text_fields input {
+  width: 100%;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  background: transparent;
+  border: 2px solid goldenrod;
+  border-radius: 0.1rem;
+}
+.text_fields textarea {
+  width: 100%;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  height: 8rem;
+  background: transparent;
+  border: 2px solid goldenrod;
+  border-radius: 0.1rem;
+}
+.text_fields button {
+  width: 4rem;
+  padding: 0.2rem;
+  margin-top: 1rem;
+  margin-left: 75%;
+  background: rgba(0, 128, 0, 0.3);
+  color: gray;
+  border: 2px solid goldenrod;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.text_fields button:hover {
+  background: rgba(0, 128, 0, 5);
+  color: white;
+}
+@media screen and (max-width: 1200px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .contact_text_box {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .text_fields {
+    width: 100%;
+  }
+  .text_fields input {
+    margin: 0.5rem 0;
+  }
+  .text_fields textarea {
+    margin-top: 0.5rem;
+    height: 4rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .contact {
+    width: 80%;
+    transform: translate(-50%, -45%);
+  }
+}

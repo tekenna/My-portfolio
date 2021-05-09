@@ -1,0 +1,52 @@
+.nav_container {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 3rem;
+  align-items: center;
+}
+h1 {
+  color: goldenrod;
+  font-size: 3em;
+  margin-top: -0.5rem;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li {
+  list-style: none;
+  padding: 0.5rem 1rem;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+ul li:hover {
+  color: goldenrod;
+}
+@media screen and (max-width: 800px) {
+  .nav_container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    margin-left: -1.5rem;
+  }
+  ul {
+    display: flex;
+    width: 100%;
+  }
+  ul li {
+    padding: 0.3rem 0.5rem;
+    letter-spacing: 0.01rem;
+    
+  }
+}
